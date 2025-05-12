@@ -1,0 +1,28 @@
+apiVersion: lightspeed.openshift.io/v1
+kind: OlsConfig
+metadata:
+  name: custom-olsconfig
+spec:
+  retrieval:
+    sources:
+      - type: web
+        url: https://example.com/ols-byok/naming-policy.md
+        name: naming-policy
+      - type: web
+        url: https://example.com/ols-byok/scc-policy.md
+        name: scc-policy
+      - type: web
+        url: https://example.com/ols-byok/node-labeling.md
+        name: node-labeling
+      - type: web
+        url: https://example.com/ols-byok/resource-quota.md
+        name: resource-quota
+      - type: web
+        url: https://example.com/ols-byok/image-policy.md
+        name: image-policy
+      - type: web
+        url: https://example.com/ols-byok/logging-standard.md
+        name: logging-standard
+      - type: web
+        url: https://example.com/ols-byok/deployment-strategy.md
+        name: deployment-strategy
