@@ -26,3 +26,6 @@ spec:
       - type: web
         url: https://example.com/ols-byok/deployment-strategy.md
         name: deployment-strategy
+      - type: web
+        url: https://example.com/ols-byok/autoscaling-policy.md
+        name: autoscaling-policy
