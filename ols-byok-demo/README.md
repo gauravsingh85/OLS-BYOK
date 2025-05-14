@@ -42,7 +42,7 @@ nodeSelector:
 
 ### 4. Resource Quotas  
 **Demo Question:**  
-> “Can I deploy a workload with 20Gi memory in my project?”
+> "What is my company's policy on resource quota?”
 
 **OLS Response with BYOK:**  
 > Your namespace has a max memory quota of 16Gi. You must request approval via Jira for exceeding this limit.
@@ -51,7 +51,7 @@ nodeSelector:
 
 ### 5. Internal Registry Usage  
 **Demo Question:**  
-> “Can I use `nginx:latest` from Docker Hub?”
+> "what is my company's policy on using Docker Hub?”
 
 **OLS Response with BYOK:**  
 > External registries like Docker Hub are blocked. Please use `quay.mycompany.com/nginx` or mirror the image.
@@ -60,7 +60,7 @@ nodeSelector:
 
 ### 6. Logging Standards  
 **Demo Question:**  
-> “Can my app write logs to a file on disk?”
+> "What is my company policy on writing logs?”
 
 **OLS Response with BYOK:**  
 > Logs must be in structured JSON and written to stdout/stderr only for Fluentd collection.
@@ -69,7 +69,7 @@ nodeSelector:
 
 ### 7. Deployment Strategy Policy  
 **Demo Question:**  
-> “Can I use Recreate deployment strategy in production?”
+> “what is my company's policy on deployment strategy ?”
 
 **OLS Response with BYOK:**  
 > Recreate strategy is disallowed. Please use RollingUpdate for production deployments.
@@ -89,7 +89,7 @@ To integrate these with OLS:
 
 ### 8. Pod Autoscaling Policy  
 **Demo Question:**  
-> “Can I use memory-based HPA in production?”
+> "What is my company policy on HPA?”
 
 **OLS Response with BYOK:**  
 > According to your organization’s autoscaling policy, only CPU-based HPA is allowed by default in production. Memory-based or custom metrics require benchmarking and prior approval.
